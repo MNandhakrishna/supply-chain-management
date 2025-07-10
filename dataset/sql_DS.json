@@ -1,0 +1,26 @@
+{
+	"name": "sql_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "DatasetName",
+				"type": "varchar"
+			},
+			{
+				"name": "LastLoadedQuarter",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "IncrementalLoadTracker"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
